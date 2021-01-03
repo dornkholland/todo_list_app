@@ -26,10 +26,58 @@ body {
 .title {
   /* set title to take up whole header grid area */
   grid-area: header;
+  text-align: center;
+  /* dynamic title font change, keeps it big when you need */
+  font-size: calc(7vw + 2rem);
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.1);
+  letter-spacing: 2px;
+  margin: -0.1em 0 0.1em;
 }
 
 .all-tasks {
   grid-area: lists;
+}
+
+/* styles each ul for lists  */
+.task-list {
+  line-height: 1.7;
+  font-size: 1.2rem;
+  list-style: circle;
+  padding-left: 1.1em;
+}
+
+form {
+  display: flex;
+}
+
+.new {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid currentColor;
+  font-size: inherit;
+  color: inherit;
+  outline: none;
+
+  transition: border-bottom 250ms ease-in;
+  order: 2;
+}
+
+.new::placeholder {
+  color: white;
+  opacity: 0.6;
+}
+
+.new:focus {
+  border-bottom-width: 3px;
+}
+
+.new:focus::placeholder {
+  opacity: 0.2;
+}
+
+.active-list {
+  font-weight: 700;
 }
 
 .todo-list {
