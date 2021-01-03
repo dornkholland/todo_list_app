@@ -1,27 +1,34 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Todo List</title>
-        <link rel="stylesheet" href="css/main.css" />
-    </head>
+  <head>
+    <title>Todo List</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
 
+  <body>
+    <!-- header of stuff here -->
+    <h1 class="title">Stuff I need to do</h1>
+    <div class="all-tasks">
+      <!-- active list of taskLISTS here -->
+      <h2 class="task-list-title">My lists</h2>
+      <ul class="task-list">
+        <li class="active-list">Youtube</li>
+        <li>Work</li>
+        <li>Grocery</li>
+      </ul>
 
-    <body>
-        <h1 class="title">Stuff I need to do</h1>
-        <div class="all-tasks">
+      <!-- adding new lists -->
+      <form action="">
+        <input
+          type="text"
+          class="new list"
+          placeholder="new list name"
+          aria-label="new list name"
+        />
+        <button class="btn list" aria-label="create new list">+</button>
+      </form>
+    </div>
 
-            <h2 class="task-list-title">My lists</h2>
-            <ul class="task-list">
-                <li class = "active-list"></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
-
-        <div class="todo-list"> </div>
-
-
-    </body>
-    <!-- test changes -->
+    <div class="todo-list"></div>
+  </body>
 </html>
-
