@@ -51,6 +51,25 @@ form {
   display: flex;
 }
 
+.btn {
+    cursor: pointer;
+    background: 0;
+    border: 0;
+    padding: 0;
+    color: inherit;
+}
+
+.btn.list {
+    font-size: 1.5 rem;
+    font-weight: 900;
+    margin-right: .25;
+    transition: opacity 250ms ease-in;
+}
+
+.btn.list:hover {
+    opacity: .7;
+}
+
 .new {
   background: transparent;
   border: 0;
@@ -74,6 +93,10 @@ form {
 
 .new:focus::placeholder {
   opacity: 0.2;
+}
+
+.new.list {
+  font-size: 1.1rem;
 }
 
 .active-list {
